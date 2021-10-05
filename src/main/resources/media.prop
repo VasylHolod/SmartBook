@@ -1,0 +1,12 @@
+media.intPath = C:\\_Work\\ox\\
+media.extPath = verb\\
+
+mediaPath.filePathExtFirstFormBr = gb\\ff\\
+mediaPath.filePathExtSecondFormBr = gb\\sf\\
+mediaPath.filePathExtThirdFormBr = gb\\tf\\
+mediaPath.filePathExtIngFormBr = gb\\ing\\
+
+mediaPath.filePathExtFirstFormAm = am\\ff\\
+mediaPath.filePathExtSecondFormAm = am\\sf\\
+mediaPath.filePathExtThirdFormAm = am\\tf\\
+mediaPath.filePathExtIngFormAm = am\\ing\\

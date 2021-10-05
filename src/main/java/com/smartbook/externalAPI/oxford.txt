@@ -1,0 +1,11 @@
+oxford.app_id = 6db15c4f
+oxford.app_key = d501db354d5c7580f0b2bcb0422a3b9d
+
+#Lesia
+#oxford.app_id = d1ab7991
+#oxford.app_key = 343baf49024088578235d60208217ea3
+oxford.baseUrl = https://od-api.oxforddictionaries.com:443/api/v2/entries/
+
+#Vasyl
+#oxford.app_id = 1bf0e998
+#oxford.app_key = 6a965df07b05557d138abe789dd4a0b4

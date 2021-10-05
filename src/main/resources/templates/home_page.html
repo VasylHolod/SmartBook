@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Home Page</h1>
+<h2>Welcome <span th:text="${login}"></span></h2>
+<h2></h2>
+<div>
+    <form action="#" autocomplete="off">
+        <label for="inputG">Label 1</label>
+<!--        <input id="inputG" name="id" type="text" onfocus="this.value=''" autofocus>-->
+        <input id="inputG" name="id" type="text" autofocus>
+        <input id="but_id" type="submit" value="Send request">
+    </form>
+</div>
+<h1></h1>
+<div>
+    <table id="myTable" border="">
+        <tr>
+            <th>Id</th>
+            <th>Uk</th>
+            <th>En</th>
+        </tr>
+    </table>
+</div>
+<h1></h1>
+<div>
+    <table border="">
+        <tr>
+            <th>ID</th>
+            <th>Ukrainian</th>
+            <th>English</th>
+        </tr>
+        <th:block th:each="group : ${groups}">
+            <tr>
+                <td th:text="${group.id}"></td>
+                <td th:text="${group.grNameUk}"></td>
+                <td th:text="${group.grNameEn}"></td>
+            </tr>
+        </th:block>
+    </table>
+    <form action="/createGroup" method="post" th:object="${group}">
+        <input name="id" type="text">
+        <input name="grNameUk" type="text">
+        <input name="grNameEn" type="text">
+        <input th:type="submit" value="Create group">
+    </form>
+
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/input.js"></script>
+</body>
+</html>

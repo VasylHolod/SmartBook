@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<h2>Hello World!</h2>
+<button onclick="myFunction()">Send request</button>
+<p id="paragraph"></p>
+<script type="text/javascript">
+    function myFunction() {
+        //function which send ajax request to the server
+        $.ajax({
+            url : '/user/id',
+            datatype : 'json',
+            type : "post",
+            contentType : "application/json",
+            data : JSON.stringify({
+                message : 'Hi there',
+                id : 4
+            }),
+            success : function(data) {
+                console.log(data);
+                $("#paragraph").text(data.message);
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
