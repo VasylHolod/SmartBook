@@ -1,0 +1,174 @@
+/*@import url(~grid.sass);*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  color: white;
+  display: grid;
+  grid-template-areas: "section header" "section main" "footer footer";
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 18% 1fr;
+  grid-gap: 0.2rem;
+  width: 100%;
+  min-height: 100vh;
+}
+
+header, footer {
+  padding: 1rem;
+  background: green;
+}
+
+section {
+  background-color: gold;
+  padding: 1rem;
+  color: blue;
+  margin: 0;
+}
+section .logo-data-left {
+  display: flex;
+  background-color: cadetblue;
+  height: 5rem;
+  text-align: center;
+}
+section .logo-data-left .logo {
+  background-color: bisque;
+  height: 100%;
+  width: 40%;
+}
+section .logo-data-left .data {
+  background-color: burlywood;
+  height: 100%;
+  width: 60%;
+}
+section nav .section-nav-left {
+  background-color: bisque;
+  align-items: center;
+  padding: 0;
+}
+section nav .list-nav-left {
+  list-style: none;
+  background-color: cadetblue;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+section nav .list-nav-left a {
+  text-decoration: none;
+}
+
+main {
+  background-color: cadetblue;
+  padding: 1rem;
+  color: gold;
+  display: grid;
+  grid-template-areas: "article" "article" "article";
+  grid-template-rows: 20% 1fr 1fr;
+  grid-template-columns: 100%;
+  grid-gap: 0.2rem;
+}
+main article {
+  background-color: bisque;
+  color: black;
+}
+main h1 {
+  padding-top: 1rem;
+  text-align: center;
+}
+main .forms {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1rem;
+}
+main .input-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .input-form .input-verb {
+  width: 14rem;
+}
+main .selection-form {
+  display: flex;
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+}
+main .selection-form #select-group {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+main .selection-number {
+  display: flex;
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+}
+main #select-number {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+#head-nav {
+  grid-area: header;
+}
+
+#page-end {
+  grid-area: footer;
+}
+
+#main-block {
+  grid-area: main;
+}
+
+#nav-left {
+  grid-area: section;
+}
+
+input {
+  display: flex;
+  width: 15rem;
+  padding: 0.7rem 1rem;
+  margin-left: 1rem;
+  margin-top: 2.5rem;
+  float: left;
+  color: #4B4848;
+  font-size: 1rem;
+  border: 0;
+  background: white;
+  border-radius: 3px 0 0 3px;
+}
+input:focus {
+  outline: 0;
+  background: white;
+}
+
+button {
+  position: relative;
+  float: left;
+  border: 0;
+  padding: 0;
+  margin-top: 2.5rem;
+  cursor: pointer;
+  height: 2.55rem;
+  width: 6rem;
+  color: #fff;
+  font-size: 1rem;
+  background: cadetblue;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-radius: 0 3px 3px 0;
+}
+button:hover {
+  background: #fff;
+  color: #444;
+}
+button:active {
+  box-shadow: 0 0 12px 0 #e1e1e1;
+}
+button:focus {
+  outline: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

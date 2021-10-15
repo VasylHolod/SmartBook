@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Administration</title>
+</head>
+<body>
+
+<!-- шапка навігація-->
+<header id="head-nav">
+    <nav></nav>
+</header>
+<!--Ліва колонка-->
+
+<section id="nav-left">
+    <div class="logo-data-left">
+        <div class="logo">Logo</div>
+        <div class="data">Data</div>
+    </div>
+    <nav>
+        <ul class="section-nav-left">
+            <li class="list-nav-left"><a href="#">News-nav</a></li>
+            <li class="list-nav-left"><a href="#">News-nav</a></li>
+            <li class="list-nav-left"><a href="#">News-nav</a></li>
+            <li class="list-nav-left"><a href="#">News-nav</a></li>
+            <li class="list-nav-left"><a href="#">News-nav</a></li>
+            <li class="list-nav-left"><a href="#">News-nav</a></li>
+            <li class="list-nav-left"><a href="#">News-nav</a></li>
+            <li class="list-nav-left"><a href="#">News-nav</a></li>
+            <li class="list-nav-left"><a href="#">News-nav</a></li>
+            <li class="list-nav-left"><a href="#">News-nav</a></li>
+        </ul>
+    </nav>
+
+</section>
+<!--Головний контент о середині-->
+<main id="main-block">
+<article>
+    <h1>Add / Edit irregular verbs</h1>
+    <form id="search-verb" action="">
+        <label for="search-verb">
+            <input type="search" placeholder="Search irregular verb..." required>
+        </label>
+        <button type="submit">Search</button>
+    </form>
+</article>
+<article>
+    <div class="forms">
+    <div class="input-form">
+    <form action="">
+    <label>
+    <input type="text" class="input-verb" placeholder="1-st form of the verb" required
+           minlength="3" maxlength="15" size="17">
+    </label>
+    </form>
+    <form action="">
+    <label>
+        <input type="text" class="input-verb" placeholder="2-nd form of the verb" required
+               minlength="3" maxlength="15" size="17">
+    </label>
+    </form>
+    <form action="">
+    <label>
+        <input type="text" class="input-verb" placeholder="3-rd form of the verb" required
+               minlength="3" maxlength="15" size="17">
+    </label>
+    </form>
+    <form action="">
+    <label>
+        <input type="text" class="input-verb" placeholder="V+ing form of the verb" required
+               minlength="5" maxlength="20" size="22">
+    </label>
+    </form>
+    <form action="">
+    <label>
+        <input type="text" class="input-verb" placeholder="With the 3-rd person singular" required
+               minlength="5" maxlength="20" size="22">
+    </label>
+    </form>
+    <form action="">
+    <label>
+        <input type="text" class="input-verb" placeholder="Translation" required
+               minlength="5" maxlength="20" size="22">
+    </label>
+    </form>
+    </div>
+<div class="selection-form">
+    <form action="http://192.168.31.240:8080/adm_verbs/wordPhonetic/111">
+        <label for="select-group"></label>
+        <select name="verb-name" id="select-group">
+            <option value="choose">-- Please choose a group of verbs --</option>
+            <option value="group-1">Group-1</option>
+            <option value="group-2">Group-2</option>
+            <option value="group-3">Group-3</option>
+            <option value="group-4">Group-4</option>
+            <option value="group-5">Group-5</option>
+            <option value="group-6">Group-6</option>
+            <option value="group-7">Group-7</option>
+            <option value="group-8">Group-8</option>
+            <option value="group-9">Group-9</option>
+            <option value="group-10">Group-10</option>
+            <option value="group-11">Group-11</option>
+            <option value="group-12">Group-12</option>
+            <option value="group-13">Group-13</option>
+            <option value="group-14">Group-14</option>
+        </select>
+    </form>
+</div>
+    <div class="selection-number">
+        <form action="">
+            <label for="select-number"></label>
+            <select name="number" id="select-number">
+                <option value="choose">-- Number --</option>
+                <option value="number-1">50</option>
+                <option value="number-2">100</option>
+                <option value="number-3">150</option>
+                <option value="number-4">200</option>
+                <option value="number-5">300</option>
+                <option value="number-6">400</option>
+            </select>
+        </form>
+    </div>
+    </div>
+</article>
+<article></article>
+</main>
+
+<!--Кінець сторінки-->
+<footer id="page-end"></footer>
+
+</body>
+</html>

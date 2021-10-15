@@ -4,6 +4,7 @@ import com.smartbook.entity.VerbGroupMark;
 import com.smartbook.service.VerbGroupMarkService;
 import lombok.AllArgsConstructor;
 import org.bouncycastle.its.asn1.IValue;
+import org.bouncycastle.math.raw.Mod;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -29,6 +30,11 @@ public class HomeController {
         model.addAttribute("groups", groups);
         model.addAttribute("group", new VerbGroupMark());
         return "home_page";
+    }
+
+    @GetMapping(value = "/demo")
+    public String demo(Model model){
+        return "admin";
     }
 
 
